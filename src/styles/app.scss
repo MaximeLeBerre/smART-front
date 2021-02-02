@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ overflow: hidden;
 
 .link{
   text-decoration: none;
-  color :#E4D5B7;
+  color :#83502E;
 
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
@@ -30,15 +32,31 @@ overflow: hidden;
     }
 }
 
-.slide {
+.slide{
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 100px;
   background-color: #E4D5B7;
-}
+  text-align: center;
+  padding: 2rem;
+
+  h1{
+    font-size:8rem;
+  }
+  p{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #83502E;
+  }
+  
+  }
+
+
+
+
 
 
 .blocHorizontal {
@@ -62,4 +80,33 @@ overflow: hidden;
 ::-webkit-scrollbar {
   display: none;
 }
+
+.div-image{
+  width: auto;
+  height: 60%;
+  background-position: center;
+  transform: rotate(5deg);
+  position: relative;
+  transition-duration: 5s;
+}
+
+.div-image:hover{
+  width: auto;
+  height: 60%;
+  background-position: center;
+  transform: scale(1.4) rotate(-15deg);
+  position: relative;
+  
+}
+
+.work-information-content{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+
+
 @import "./navbar";

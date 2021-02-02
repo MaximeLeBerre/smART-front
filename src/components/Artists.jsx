@@ -13,10 +13,10 @@ function Artists() {
 
   return (
     <>
-      <div class="container">
-        <div class="blocHorizontal">
+      <div className="container">
+        <div className="blocHorizontal">
           {artists.map((artist) => (
-            <div class="slide ">
+            <div className="slide ">
               <h1>{[artist.name]}</h1>
             </div>
           ))}
