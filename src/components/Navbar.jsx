@@ -8,7 +8,7 @@ function Navbar() {
           <ul className="navbar-list-menu">
             <Link to="/artists" className="link"><li>Artists</li></Link>
             <div className="title-container">
-            <Link to="/" className="link"><h1>smART</h1></Link>
+            <Link to="/" className="home-link"><h1>smART</h1></Link>
             </div>
             <Link to="/works" className="link"><li>Works</li></Link>
           </ul>

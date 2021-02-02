@@ -7,10 +7,10 @@ function Landing() {
       <div class="container">
           <div class="blocHorizontal">
             <div class="slide ">
-            <Artists />
+            <h1>Artists</h1>
             </div>
             <div class="slide ">
-              <Works />
+            <h1>Works</h1>
             </div>
           </div>
         </div>
