@@ -1,23 +1,31 @@
-import './App.css';
-import Navbar from './components/Navbar'
-import Works from './components/Works'
-import Artists from './components/Artists'
-import './styles/app.scss';
-
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Works from "./components/Works";
+import Artists from "./components/Artists";
+import "./styles/app.scss";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Landing from "./components/Landing";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div class="container">
-
-        <div class="blocHorizontal">
-            <div class="slide "><Artists /></div>
-            <div class="slide "><Works /></div>
-        </div>
-
-    </div>
-    </div>
+    <>
+    <Router>
+      <div className="app-container">
+        <Navbar />
+        <Switch>
+        <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route path="/artists">
+            <Artists />
+          </Route>
+          <Route path="/works">
+            <Works />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    </>
   );
 }
 

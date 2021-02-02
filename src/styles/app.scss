@@ -4,6 +4,22 @@
   box-sizing: border-box;
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 }
+
+.app-container{
+max-height: 100vh;
+overflow: hidden;
+}
+
+.link{
+  text-decoration: none;
+  color :#E4D5B7;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+        color :#E4D5B7;
+    }
+}
+
 .slide {
   width: 100vw;
   height: 100vh;

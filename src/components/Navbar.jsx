@@ -1,14 +1,16 @@
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <>
       <div className="navbar-container">
         <div className="list-container">
           <ul className="navbar-list-menu">
-            <li>Artists</li>
+            <Link to="/artists" className="link"><li>Artists</li></Link>
             <div className="title-container">
-              <h1>smART</h1>
+            <Link to="/" className="link"><h1>smART</h1></Link>
             </div>
-            <li>Works</li>
+            <Link to="/works" className="link"><li>Works</li></Link>
           </ul>
         </div>
       </div>
