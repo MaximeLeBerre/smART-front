@@ -5,10 +5,10 @@
   @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 }
 
-.app-container {
+ /* .app-container {
   max-height: 100vh;
   overflow: hidden;
-}
+}  */
 
 .link {
   text-decoration: none;
@@ -96,6 +96,13 @@
   z-index: 0;
 }
 
+.div-work-image {
+  width: auto;
+  height: 60%;
+  background-position: center;
+  
+}
+
 .div-image:hover {
   width: auto;
   height: 60%;
@@ -125,4 +132,7 @@
   z-index: 2;
 }
 
+
+
 @import "./navbar";
+@import "./work";

@@ -3,6 +3,7 @@ import axios from "axios";
 
 function Works() {
   const [works, setWorks] = useState([]);
+  const [isFilterActiveCollage, setFilterCollage] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:5000/api/works").then((res) => {
@@ -11,39 +12,30 @@ function Works() {
     });
   }, []);
 
-  const lenghts = works.length;
-
-  const styles = {
-    display: "flex",
-    flexDirection: "row",
-    width: `${lenghts}00vw`,
-    transform: "rotate(90deg) translateY(-100vh)",
-    transformOrigin: "top left",
-  };
-
   return (
     <>
-      <div className="container">
-        <div style={styles}>
-          {works.map((work) => (
-            <div className="slide">
-              <div className="content-container">
+      <div>
+        <button onClick={()=> setFilterCollage(!isFilterActiveCollage) }>Collage</button>
+        <div>
+          {works
+          .filter((work) => !isFilterActiveCollage || work.kindName === "collage")
+          .map((work) => (
+            <>
+            <div className="work-container">
+              <div className="work-content-container">
                 <h1>{[work.name]}</h1>
-                <div className="work-information-content">
+                <div className="work-p-container">
                   <p>{[work.date]}</p>
                   <p>/</p>
                   <p>{[work.artistName]}</p>
                 </div>
               </div>
-              
-              <img className="div-image" src={work.picture} alt={work.name} />
-            
-                {/* <div
-                  className="div-image"
-                  style={{ backgroundImage: `url(${work.picture})` }}
-                ></div> */}
+
+              <img className="image" src={work.picture} alt={work.name} />
               
             </div>
+            <hr></hr>
+            </>
           ))}
         </div>
       </div>
