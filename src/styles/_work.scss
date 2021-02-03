@@ -107,3 +107,34 @@
     margin: 1rem 0;
   }
 }
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+
+  .btn-not-active{
+    padding: 1rem;
+    width: 25%;
+    color: black;
+    background-color: transparent;
+    border:none;
+
+    p{
+      font-size: 1rem;
+    }
+  }
+  .btn-active{
+    padding: 1rem;
+    width: 25%;
+    color: white;
+    background-color: black;
+    border: none;
+
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  button:focus {outline:0;}
+  
+}
