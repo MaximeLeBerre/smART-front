@@ -5,38 +5,9 @@
   @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 }
 
- /* .app-container {
-  max-height: 100vh;
-  overflow: hidden;
-}  */
+  
 
-.link {
-  text-decoration: none;
-  color: #83502e;
 
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-    color: #e4d5b7;
-  }
-}
-
-.home-link {
-  text-decoration: none;
-  color: white;
-
-  &:focus,
-  &:hover,
-  &:visited,
-  &:link,
-  &:active {
-    text-decoration: none;
-    color: white;
-  }
-}
 
 .slide {
   width: 100vw;
@@ -132,7 +103,22 @@
   z-index: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  
 
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+    
+}
+
+@media screen and (max-width: 480px) {
+  li{
+    display: none;
+  }
+}
 
 @import "./navbar";
 @import "./work";
