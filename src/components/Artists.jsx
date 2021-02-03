@@ -11,13 +11,30 @@ function Artists() {
     });
   }, []);
 
+  const lenghts = artists.length;
+
+  const styles = {
+    display: "flex",
+    flexDirection: "row",
+    width: `${lenghts}00vw`,
+    transform: "rotate(90deg) translateY(-100vh)",
+    transformOrigin: "top left",
+  };
+
   return (
     <>
       <div className="container">
-        <div className="blocHorizontal">
+        <div style={styles}>
           {artists.map((artist) => (
-            <div className="slide ">
-              <h1>{[artist.name]}</h1>
+            <div className="slide">
+              <div className="content-container">
+                <h1>{[artist.name]}</h1>
+                <div className="artist-information-content">
+                  
+                </div>
+              </div>
+
+              <img className="div-image" src={artist.picture} alt={artist.name} />
             </div>
           ))}
         </div>

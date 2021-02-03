@@ -12,7 +12,6 @@ function Works() {
   }, []);
 
   const lenghts = works.length;
-  console.log(lenghts);
 
   const styles = {
     display: "flex",
