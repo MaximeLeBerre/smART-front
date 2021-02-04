@@ -28,10 +28,7 @@ function Artists() {
           {artists.map((artist) => (
             <div className="slide">
               <div className="content-container">
-                <h1>{[artist.name]}</h1>
-                <div className="artist-information-content">
-                  
-                </div>
+                <h1 key={artist.id}>{[artist.name]}</h1>
               </div>
 
               <img className="div-image" src={artist.picture} alt={artist.name} />

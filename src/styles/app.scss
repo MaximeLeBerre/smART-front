@@ -6,9 +6,6 @@
 }
 
   
-
-
-
 .slide {
   width: 100vw;
   height: 100vh;
@@ -57,54 +54,44 @@
   display: none;
 }
 
-.div-image {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  transform: rotate(5deg);
-  position: relative;
-  transition-duration: 5s;
-  z-index: 0;
-}
-
-.div-work-image {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  
-}
-
-.div-image:hover {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  transform: scale(1.2) rotate(-5deg);
-  position: relative;
-}
-
-.work-information-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.artist-information-content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  p{
-    font-style: italic;
-    font-size: 2rem;
-  }
-}
-
-.content-container{
-  z-index: 2;
-}
-
 @media screen and (max-width: 1024px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    transform: none;
+  transform-origin: none;
   
+  }
+
+  .blocHorizontal {
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    transform-origin: none;
+  }
+  
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    text-align: center;
+  
+    
+  
+    h1 {
+      font-size: 4rem;
+     
+    }
+    p {
+      font-size: 2rem;
+      font-weight: 400;
+      color: #83502e;
+    }
+  }
 
   
 }
@@ -122,3 +109,4 @@
 
 @import "./navbar";
 @import "./work";
+@import "./artist.scss"

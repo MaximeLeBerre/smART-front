@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter as Link } from "react-router-dom";
-import Form from './Form'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 
 import axios from "axios";
 
@@ -48,7 +48,7 @@ function Works() {
             <p>Réalité virtuelle</p>
           </button>
         </div>
-        <div>
+        <div className="horizontal-scroll">
           {works
             .filter(
               (work) => !isFilterActiveCollage || work.kindName === "Collage"
@@ -86,11 +86,6 @@ function Works() {
               </>
             ))}
         </div>
-
-        <Link to="/form">
-          <h2>Tu es un artiste et tu souhaites exposer, c'est par ici !</h2>
-          <button className="btn-go">Let's go !</button>
-        </Link>
       </div>
     </>
   );
