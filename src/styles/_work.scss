@@ -1,5 +1,11 @@
-.container-main{
-  background-color :#e4d5b7;
+.container-main {
+  background-color: #e4d5b7;
+text-align: center;
+
+h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 }
 
 .work-container {
@@ -39,6 +45,56 @@
   max-width: 100%;
   background-size: cover;
 }
+
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  button p {
+    transition: all 200ms ease-in;
+  }
+
+  button p:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .btn-not-active {
+    padding: 1rem;
+    width: 25%;
+    color: #96613D;
+    background-color: black;
+    border: none;
+    
+
+    p {
+      font-size: 1rem;
+      transform: scale(1.2);
+    }
+  }
+  .btn-active {
+    padding: 1rem;
+    width: 25%;
+    color: white;
+    background-color: black;
+    border: none;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  button:focus {
+    outline: 0;
+  }
+}
+
+.btn-go{
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
 
 @media screen and (max-width: 1024px) {
   h1 {
@@ -106,35 +162,4 @@
   .image {
     margin: 1rem 0;
   }
-}
-
-.btn-container{
-  display: flex;
-  justify-content: space-evenly;
-
-  .btn-not-active{
-    padding: 1rem;
-    width: 25%;
-    color: black;
-    background-color: transparent;
-    border:none;
-
-    p{
-      font-size: 1rem;
-    }
-  }
-  .btn-active{
-    padding: 1rem;
-    width: 25%;
-    color: white;
-    background-color: black;
-    border: none;
-
-    p{
-      font-size: 1rem;
-    }
-  }
-
-  button:focus {outline:0;}
-  
 }

@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Link } from "react-router-dom";
+import Form from './Form'
+
 import axios from "axios";
 
 function Works() {
@@ -19,17 +22,30 @@ function Works() {
     <>
       <div className="container-main">
         <div className="btn-container">
-          <button className={ isFilterActiveCollage? 'btn-not-active' : 'btn-active'} onClick={() => setFilterCollage(!isFilterActiveCollage)}>
+          <button
+            type="button"
+            className={isFilterActiveCollage ? "btn-not-active" : "btn-active"}
+            onClick={() => setFilterCollage(!isFilterActiveCollage)}
+          >
             <p>Collage</p>
           </button>
-          <button className={ isFilterActivePhoto? 'btn-not-active' : 'btn-active'} onClick={() => setFilterPhoto(!isFilterActivePhoto)}>
-          <p>Photo</p>
+          <button
+            className={isFilterActivePhoto ? "btn-not-active" : "btn-active"}
+            onClick={() => setFilterPhoto(!isFilterActivePhoto)}
+          >
+            <p>Photo</p>
           </button>
-          <button className={ isFilterActivePeiture? 'btn-not-active' : 'btn-active'} onClick={() => setFilterPeinture(!isFilterActivePeiture)}>
-          <p>Peinture</p>
+          <button
+            className={isFilterActivePeiture ? "btn-not-active" : "btn-active"}
+            onClick={() => setFilterPeinture(!isFilterActivePeiture)}
+          >
+            <p>Peinture</p>
           </button>
-          <button className={ isFilterActiveVirtual? 'btn-not-active' : 'btn-active'} onClick={() => setFilterVirtual(!isFilterActiveVirtual)}>
-          <p>Réalité virtuelle</p>
+          <button
+            className={isFilterActiveVirtual ? "btn-not-active" : "btn-active"}
+            onClick={() => setFilterVirtual(!isFilterActiveVirtual)}
+          >
+            <p>Réalité virtuelle</p>
           </button>
         </div>
         <div>
@@ -70,6 +86,11 @@ function Works() {
               </>
             ))}
         </div>
+
+        <Link to="/form">
+          <h2>Tu es un artiste et tu souhaites exposer, c'est par ici !</h2>
+          <button className="btn-go">Let's go !</button>
+        </Link>
       </div>
     </>
   );
