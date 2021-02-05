@@ -1,50 +1,6 @@
-
-.div-image {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  transform: rotate(5deg);
-  position: relative;
-  transition-duration: 5s;
-  z-index: 0;
-}
-
-.div-work-image {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  
-}
-
-.div-image:hover {
-  width: auto;
-  height: 60%;
-  background-position: center;
-  transform: scale(1.2) rotate(-5deg);
-  position: relative;
-}
-
-
-
-.content-container{
-  z-index: 2;
-}
-
-
-
-@media screen and (max-width: 1024px) {
-  
-
-  
-}
-
-@media screen and (max-width: 768px) {
-  
-    
-}
-
-@media screen and (max-width: 480px) {
-  li{
-    display: none;
-  }
+.artist-image {
+  width: 30%;
+  height: auto;
+  max-width: 100%;
+  background-size: cover;
 }

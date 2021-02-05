@@ -11,27 +11,19 @@ function Artists() {
     });
   }, []);
 
-  const lenghts = artists.length;
-
-  const styles = {
-    display: "flex",
-    flexDirection: "row",
-    width: `${lenghts}00vw`,
-    transform: "rotate(90deg) translateY(-100vh)",
-    transformOrigin: "top left",
-  };
+  
 
   return (
     <>
       <div className="container">
-        <div style={styles}>
+        <div >
           {artists.map((artist) => (
             <div className="slide">
               <div className="content-container">
                 <h1 key={artist.id}>{[artist.name]}</h1>
               </div>
 
-              <img className="div-image" src={artist.picture} alt={artist.name} />
+              <img className="artist-image" src={artist.picture} alt={artist.name} />
             </div>
           ))}
         </div>
