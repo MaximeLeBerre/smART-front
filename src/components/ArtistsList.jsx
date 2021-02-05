@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Artist from './Artist'
 
-function Artists() {
+function ArtistsList() {
   const [artists, setArtists] = useState([]);
 
   useEffect(() => {
@@ -15,16 +16,14 @@ function Artists() {
 
   return (
     <>
-      <div className="container">
+      <div >
         <div >
           {artists.map((artist) => (
-            <div className="slide">
-              <div className="content-container">
-                <h1 key={artist.id}>{[artist.name]}</h1>
-              </div>
-
-              <img className="artist-image" src={artist.picture} alt={artist.name} />
-            </div>
+           <Artist 
+           id={artist.id}
+           name={artist.name}
+           picture={artist.picture}
+           />
           ))}
         </div>
       </div>
@@ -32,4 +31,4 @@ function Artists() {
   );
 }
 
-export default Artists;
+export default ArtistsList;

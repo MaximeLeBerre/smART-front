@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Works from "./components/Works";
-import Artists from "./components/Artists";
+import ArtistsList from "./components/ArtistsList";
 import "./styles/app.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Landing from "./components/Landing";
@@ -17,7 +17,7 @@ function App() {
               <Landing />
             </Route>
             <Route path="/artists">
-              <Artists />
+              <ArtistsList />
             </Route>
             <Route path="/works">
               <Works />

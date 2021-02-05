@@ -1,5 +1,4 @@
-import Artists from "./Artists";
-import Works from "./Works";
+
 
 function Landing() {
   return (
