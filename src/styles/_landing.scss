@@ -1,0 +1,22 @@
+.landing-page{
+  
+  background-image: url("https://i.pinimg.com/originals/07/5f/56/075f56e1d53766686f446e81399a0439.jpg");
+  
+  height: 100vh;
+   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    color: #e4d5b7;
+    height: auto;
+    font-size: 8rem;
+    opacity: 1;
+    background-color: black;
+    padding: 1rem;
+    opacity: 0.8;
+  }
+}

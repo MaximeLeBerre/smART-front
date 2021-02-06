@@ -1,14 +1,8 @@
-
-
 function Landing() {
   return (
     <>
-      <div >
-        <div >
-          <div >
-            <h1>Welcome</h1>
-          </div>
-        </div>
+      <div className="landing-page">
+        <h1>Welcome</h1>
       </div>
     </>
   );
