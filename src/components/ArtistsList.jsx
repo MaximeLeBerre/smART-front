@@ -16,8 +16,8 @@ function ArtistsList() {
 
   return (
     <>
-      <div >
-        <div >
+      <div className="artist-list-container">
+        <div className="grid" >
           {artists.map((artist) => (
            <Artist 
            id={artist.id}

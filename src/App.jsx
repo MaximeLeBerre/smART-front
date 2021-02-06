@@ -5,6 +5,7 @@ import ArtistsList from "./components/ArtistsList";
 import "./styles/app.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Landing from "./components/Landing";
+import ArtistDetails from "./components/ArtistDetails";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/works">
               <Works />
+            </Route>
+            <Route path="/detail/:id">
+              <ArtistDetails />
             </Route>
           </Switch>
         </div>
