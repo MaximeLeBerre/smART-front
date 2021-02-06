@@ -1,8 +1,38 @@
+.link {
+  text-decoration: none;
+  color: #83502e;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    color: #e4d5b7;
+  }
+}
+
+.home-link {
+  text-decoration: none;
+  color: white;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+
 .navbar-container{
   background-color: black;
   color: #FAF0E6;
   display: flex;
   justify-content: center;
+  height: auto;
 
 }
 .title-container{

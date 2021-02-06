@@ -1,36 +1,167 @@
-.work-container{
+.container-main {
+  background-color: #e4d5b7;
+text-align: center;
+
+h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+}
+
+.work-container {
   display: flex;
   justify-content: space-between;
   margin: 2.5rem;
 }
 
-.work-content-container{
+.work-content-container {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 
-  h1{
+  h1 {
     padding-bottom: 1rem;
-    font-size: 10rem;
   }
-
 }
 
-.work-p-container{
+.work-p-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  max-width: 100%;
 
-  p{
+  p {
     padding: 1rem;
-    font-size: 4rem;;
+    font-size: 4rem;
   }
-  
 }
 
-.image{
+.image {
   width: 50%;
-  height: auto;
+  height: 50%;
+  max-width: 100%;
+  background-size: cover;
+}
+
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  button p {
+    transition: all 200ms ease-in;
+  }
+
+  button p:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .btn-not-active {
+    padding: 1rem;
+    width: 25%;
+    color: #96613D;
+    background-color: black;
+    border: none;
+    
+
+    p {
+      font-size: 1rem;
+      transform: scale(1.2);
+    }
+  }
+  .btn-active {
+    padding: 1rem;
+    width: 25%;
+    color: white;
+    background-color: black;
+    border: none;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  button:focus {
+    outline: 0;
+  }
+}
+
+.btn-go{
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .work-container {
+    margin: 1em 0;
+    padding: 1rem;
+  }
+
+  .work-p-container {
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .image {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .work-container {
+    margin: 1em 0;
+    padding: 1rem;
+  }
+
+  .work-p-container {
+    margin: 0px;
+    max-width: 100%;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .image {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1em;
+  }
+
+  .work-container {
+    margin: 1em 0;
+    padding: 1rem;
+  }
+
+  .work-p-container {
+    max-width: 100% !important;
+
+    p {
+      font-size: 0.5rem;
+    }
+  }
+
+  .image {
+    margin: 1rem 0;
+  }
 }
