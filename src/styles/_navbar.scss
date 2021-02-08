@@ -59,3 +59,39 @@ margin: 1rem;
   }
   
 }
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .navbar-list-menu{
+    
+    li{
+      font-size: 2rem;
+    }
+
+    h1{
+      font-size: 3rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar-list-menu{
+    
+    li{
+      font-size: 1rem;
+    }
+
+    h1{
+      font-size: 2rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+
+}
