@@ -20,3 +20,42 @@
     opacity: 0.8;
   }
 }
+
+
+@media screen and (max-width: 1024px) {
+
+  .landing-page{
+
+    height: 100vh;
+    width: 100vw;
+    h1{
+      font-size: 6rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .landing-page{
+
+    height: 100vh;
+    width: 100vw;
+    h1{
+      font-size: 4rem;
+    }
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+
+  .landing-page{
+
+    height: 100vh;
+    width: 100vw;
+    h1{
+      font-size: 4rem;
+    }
+  }
+}
